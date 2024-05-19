@@ -1,0 +1,103 @@
+:root {
+    --recomendados-color: #c7b198;
+    --bg-color: #f0ece2;
+    --text-color: #596e79;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding: 14px;
+    font-family: 'Exo 2', 'sans serif';
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.imagen-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container-recomendados {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    overflow: scroll;
+    background-color: var(--recomendados-color);
+    padding: 8px;
+}
+
+.cartas-destinos {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cartas-destinos img {
+    border-radius: 5%;
+    border: 2px solid var(--text-color);
+}
+
+select {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .cartas-destinos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .imageContainer {
+        border-radius: 50%;
+        max-width: 100px;
+        overflow: hidden;
+    
+    }
+    
+    .imageContainer img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    .container-recomendados {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartas-destinos p {
+        display: none;
+    }
+
+}
