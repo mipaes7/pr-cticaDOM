@@ -9,10 +9,10 @@ const recomendadosContainer = document.querySelector('.container-recomendados');
 const select = document.querySelector('select');
 
 const banner = document.createElement('img');
-bienvenidosContainer.appendChild(banner);
 banner.classList.add('imagen-banner');
 banner.setAttribute('src', `${randomBanner(bannerArray)}`);
 banner.setAttribute('alt', `banner`);
+bienvenidosContainer.appendChild(banner);
 
 const optionFragment = document.createDocumentFragment();
 destinosArray.forEach((destino) => {
