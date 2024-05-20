@@ -83,7 +83,7 @@ select {
         border-radius: 50%;
         max-width: 100px;
         overflow: hidden;
-    
+        border: 2px solid var(--text-color);
     }
     
     .imageContainer img {
