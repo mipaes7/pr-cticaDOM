@@ -62,13 +62,45 @@ section {
     gap: 6px;
 }
 
+.carta-detalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta-detalle .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.carta-detalle .imageContainer img {
+    width: 100%;
+    border: 2px solid var(--text-color);
+}
+
 .cartas-destinos img {
     border-radius: 5%;
     border: 2px solid var(--text-color);
 }
 
+.hidden {
+    display: none;
+}
+
 select {
     width: 100%;
+}
+.button {
+    top:50%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border:none;
+    border-radius:10px;
+    width: 50%;
+    align-self: center;
 }
 
 @media (max-width: 480px) {
